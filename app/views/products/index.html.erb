@@ -12,8 +12,8 @@
 
 <h1>Your Cart:</h1>
 <ol>
-<% if @cart != [] %>
-    <% @cart.each do |product| %>
+<% if cart != [] %>
+    <% cart.each do |product| %>
         <li><%= product %></li>
     <% end %>
 <% end %>
