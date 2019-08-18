@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 # resources :products
 
-
+root 'products#index'
 get '/products', to: 'products#index', as:'products'
 get 'products/add', to: 'products#add', as: 'product'
 post 'products/add', to: 'products#add', as: 'add_product'
